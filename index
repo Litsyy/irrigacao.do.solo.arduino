@@ -1,0 +1,109 @@
+# UNIVERSIDADE CIDADE DE SÃO PAULO – UNICID
+
+## IRRIGAÇÃO DO SOLO  
+### Arduino
+
+São Paulo – 2025  
+
+---
+
+## INTEGRANTES
+
+- Geovanna Victória de Freitas Ferreira – RGM: 43482856  
+- Higor Vinícius Garcia – RGM: 42948525  
+- Julianna Soares de Almeida – RGM: 46224521  
+- Renan Etyene Lusni de Souza – RGM: 42838410  
+- Rodrigo Franco Navero Martins – RGM: 43049184  
+- Thiago Costa Meneguetti – RGM: 43049401  
+- Victor Ribeiro Gomes – RGM: 42947969  
+
+---
+
+# IRRIGAÇÃO DO SOLO – ARDUINO
+
+Trabalho concluído no curso **Técnicas de Desenvolvimento de Algoritmos** na Universidade Cidade de São Paulo (UNICID).
+
+São Paulo – 2025  
+
+---
+
+# 1. Documentação de Projeto e Conceito
+
+## 1.1 Relatório de Relevância e Impacto
+
+O projeto **“Irrigação Automática de Plantas com Arduino”** tem como objetivo resolver um problema real enfrentado por pessoas que cultivam plantas em casa, hortas urbanas ou pequenos cultivos agrícolas: a dificuldade em manter a irrigação adequada de forma constante.
+
+A falta de tempo ou de conhecimento técnico pode levar ao excesso ou à falta de água, prejudicando o desenvolvimento das plantas e gerando desperdício de recursos hídricos.
+
+O sistema proposto utiliza sensores de umidade do solo conectados ao microcontrolador Arduino para medir o nível de umidade e acionar automaticamente uma bomba d’água sempre que o solo estiver seco. Dessa forma:
+
+- Promove o uso consciente da água  
+- Garante a saúde das plantas  
+- Reduz a necessidade de intervenção manual  
+
+A utilidade prática do projeto está em sua aplicação em ambientes domésticos, escolares e agrícolas, oferecendo uma solução de baixo custo, sustentável e educativa. O impacto ambiental positivo destaca a economia de água e a democratização de práticas de automação.
+
+---
+
+## 1.2 Declaração de Originalidade e Inovação
+
+O projeto propõe uma solução automatizada e acessível que se diferencia de sistemas comerciais caros e complexos.
+
+A proposta apresenta:
+
+- Monitoramento automatizado de umidade  
+- Controle inteligente de irrigação  
+- Facilidade de montagem  
+- Baixo custo  
+- Possibilidade de expansão com IoT e energia solar  
+
+Por utilizar código aberto e componentes simples, o sistema pode ser montado por estudantes ou entusiastas, tornando a automação mais acessível e incentivando práticas sustentáveis.
+
+---
+
+# 2. Objetivos e Justificativa
+
+## Objetivo Geral
+Desenvolver um sistema automatizado de irrigação de plantas utilizando Arduino, capaz de monitorar a umidade do solo e acionar a rega de forma automática, garantindo o uso eficiente da água.
+
+## Objetivos Específicos
+
+- Criar um circuito com sensor de umidade, Arduino e bomba d’água para controle automático da irrigação.  
+- Programar o sistema para detectar o nível de umidade e acionar a bomba apenas quando o solo estiver seco.  
+- Reduzir o desperdício de água com irrigação controlada.  
+
+---
+
+# 3. Entrega Técnica  
+*(Engenharia de Software e Desenvolvimento de Algoritmos)*
+
+> Código original fornecido no trabalho (incluindo erro proposital na condição `if()`):
+
+```cpp
+#define rele 3
+#define sensor 2
+
+bool irrigar = false;
+void setup()
+{
+  pinMode(rele,  OUTPUT);
+  pinMode(sensor,  INPUT);
+
+  digitalWrite(rele, HIGH);
+}
+
+void loop()
+{
+  irrigar = digitalRead(sensor);
+
+  if()
+  {
+    digitalWrite(rele, LOW);
+  }
+  else
+  {
+    digitalWrite(rele, HIGH);
+  } 
+
+  delay(500);
+}
