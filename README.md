@@ -1,8 +1,8 @@
-## 12. Informações Técnicas da Placa Arduino UNO R3
+## 1.1 Informações Técnicas da Placa Arduino UNO R3
 
 O projeto foi desenvolvido utilizando a placa **Arduino UNO Rev3**, uma das plataformas mais utilizadas em projetos educacionais, protótipos eletrônicos e aplicações de automação. O Arduino UNO é baseado no microcontrolador **ATmega328P** e foi escolhido por sua facilidade de uso, compatibilidade com diversos sensores e vasta documentação disponível.
 
-### 12.1 Características Gerais da Placa
+### 1.2 Características Gerais da Placa
 
 - Microcontrolador: ATmega328P  
 - Tensão de operação: 5V  
@@ -18,14 +18,14 @@ O projeto foi desenvolvido utilizando a placa **Arduino UNO Rev3**, uma das plat
 
 O Arduino UNO contém tudo o que é necessário para operar o microcontrolador, bastando conectá-lo ao computador via USB ou alimentá-lo externamente. A placa possui também um **reset automático**, facilitando o envio de código sem a necessidade de pressionar o botão físico.
 
-### 12.2 Entradas e Saídas
+### 1.3 Entradas e Saídas
 
 - **Pinos digitais (0–13):** podem ser configurados como entrada ou saída.  
 - **Pinos PWM (3, 5, 6, 9, 10, 11):** permitem controle de intensidade luminosa, velocidade de motores, entre outros.  
 - **Pinos analógicos (A0–A5):** leitura de valores variáveis, como sensores analógicos.  
 - **Pino 13:** possui um LED embutido útil para testes.
 
-### 12.3 Alimentação
+### 1.4 Alimentação
 
 A placa pode ser alimentada de duas formas:
 
@@ -34,7 +34,7 @@ A placa pode ser alimentada de duas formas:
 
 Quando alimentada externamente acima de 12V, o regulador pode superaquecer. Valores abaixo de 7V podem causar instabilidade durante o funcionamento.
 
-### 12.4 Comunicação
+### 1.5 Comunicação
 
 A placa suporta diferentes formas de comunicação:
 
@@ -44,7 +44,7 @@ A placa suporta diferentes formas de comunicação:
 
 A comunicação USB é realizada pelo chip **ATmega16U2**, que atua como conversor USB-Serial.
 
-### 12.5 Razões para Escolha da Placa no Projeto
+### 1.6 Razões para Escolha da Placa no Projeto
 
 O Arduino UNO foi escolhido para este sistema de irrigação automática por oferecer:
 
