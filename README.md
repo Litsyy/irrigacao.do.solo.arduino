@@ -35,9 +35,6 @@ A placa pode ser alimentada de duas formas:
 - **Via USB** (5V)  
 - **Via fonte externa** (7–12V recomendados)
 
-> ⚠️ Alimentação acima de 12V pode causar superaquecimento do regulador.  
-> ⚠️ Abaixo de 7V pode causar instabilidade.
-
 ## 1.5 Comunicação
 O Arduino UNO suporta diversos protocolos de comunicação:
 
