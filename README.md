@@ -45,7 +45,19 @@ O Arduino UNO suporta diversos protocolos de comunicação:
 - **I2C (TWI):** pinos A4 (SDA) e A5 (SCL)  
 - **SPI:** pinos 10 (SS), 11 (MOSI), 12 (MISO), 13 (SCK)
 
-A comunicação USB é realizada através do chip
+A comunicação USB é realizada através do chip **ATmega16U2**, responsável por converter USB-Serial.
+
+## 1.6 Razões para Escolha da Placa no Projeto
+O Arduino UNO foi escolhido para o sistema de irrigação automática devido a:
+
+- Baixa complexidade de programação  
+- Facilidade de conexão com sensores e módulos  
+- Alta capacidade de expansão  
+- Custo acessível  
+- Durabilidade e estabilidade  
+- Grande quantidade de exemplos, tutoriais e documentação disponíveis
+
+Essas características tornam o Arduino UNO ideal para projetos acadêmicos e protótipos funcionais.
 ---
 
 ## Resultado:
